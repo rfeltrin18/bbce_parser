@@ -291,7 +291,7 @@ def carregar_dataframe(pasta):
 
 
 if __name__ == '__main__':
-    path_logs = r'C:\Users\RAFA\Meu Drive\navarra_dev\risco_mercado\src\testes_conceito\reports\caso_02_sensib'
-    path_resultado = r'C:\Users\RAFA\Meu Drive\navarra_dev\risco_mercado\src\leitor_dados\leitor_logs_saida'
+    path_logs = r'path_logs'
+    path_resultado = r'path_resultado'
 
     test = criar_df_ofertas(path_logs, path_resultado)
