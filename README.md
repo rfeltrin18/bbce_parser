@@ -8,3 +8,5 @@ id_1: 2 <br>
 id_2: 300 <br>
 Volume: 1 <br>
 }
+
+Infelizmente a API não funciona mais e eu esqueci de salvar um sample enorme para testar o código, então espero que este template pelo menos ajude a entender qual o problema sendo resolvido. O output é um dataframe que era enviado para bancos de dados em SQLite.
