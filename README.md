@@ -1,12 +1,16 @@
 # bbce_parser
 
-Parser de logs txt. do BBCE, baseado na [antiga API](https://www.bbce.com.br/dados_historicos_agente/) que exportava dados em um template como:
+Parser of BBCE (Brazilian Electricity Trading Agency) historical data, based on the [old API](https://www.bbce.com.br/dados_historicos_agente/) which exported data from energy trade offers in this format:
 
-Oferta de compra do agente 2: { <br>
-Preco: 380.07 <br>
+Trade offer from [REDACTED]: { <br>
+Price: 380.07 <br>
 id_1: 2 <br>
 id_2: 300 <br>
 Volume: 1 <br>
 }
 
-Infelizmente a API não funciona mais e eu esqueci de salvar um sample enorme para testar o código, então espero que este template pelo menos ajude a entender qual o problema sendo resolvido. O output é um dataframe que era enviado para bancos de dados em SQLite.
+There were hundreds of .txt files (one per energy trading firm), each one with thousands of trade offers.
+
+Unfortunately the API was changed and I forgot to save a sample to test the code, but hopefully the template helps you understand which problem was being solved.
+
+The output was a dataframe which was loaded into a SQLite database.
